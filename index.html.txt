@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Treinamento: Condução de Processos Seletivos - DHO</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        .slide {
+            display: none;
+        }
+        .slide.active {
+            display: block;
+            animation: slideInUp 0.6s ease-out;
+        }
+        .slide.exiting {
+            animation: slideOutDown 0.6s ease-in forwards;
+        }
+        @keyframes slideInUp {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        @keyframes slideOutDown {
+            from { opacity: 1; transform: translateY(0); }
+            to { opacity: 0; transform: translateY(20px); }
+        }
+        .progress-bar-fill {
+            transition: width 0.4s ease-in-out;
+        }
+        .card-content h3 {
+            font-size: 1.125rem; /* text-lg */
+            font-weight: 600; /* font-semibold */
+            color: #047857; /* green-700 */
+            margin-bottom: 0.5rem; /* mb-2 */
+            padding-bottom: 0.5rem; /* pb-2 */
+            border-bottom: 2px solid #d1fae5; /* border-green-100 */
+        }
+         .card-content ul {
+            list-style-position: inside;
+            padding-left: 0.5rem;
+        }
+        .card-content li {
+            margin-bottom: 0.75rem; /* mb-3 */
+            line-height: 1.6;
+        }
+        .card-content strong {
+            color: #064e3b; /* green-900 */
+        }
+        .interactive-card {
+            transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+        }
+        .interactive-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1); /* shadow-lg */
+        }
+    </style>
+</head>
+<body class="bg-gray-100 flex items-center justify-center min-h-screen p-4">
+
+    <main class="bg-white rounded-2xl shadow-2xl w-full max-w-4xl overflow-hidden">
+        <header class="p-6 bg-green-600 text-white text-center">
+            <h1 class="text-2xl md:text-3xl font-bold">Treinamento: Condução de Processos Seletivos</h1>
+            <p class="text-green-100 mt-1">Padrão de Excelência DHO</p>
+        </header>
+
+        <div id="presentation-container" class="p-6 md:p-10">
+            <!-- Slide 1: Início -->
+            <div class="slide" data-slide="1">
+                <div class="text-center">
+                    <img src="https://i.postimg.cc/vBSryWp8/Whats-App-Image-2025-09-25-at-10-44-53.jpg" alt="Logo da DHO" class="mx-auto h-24 w-auto mb-4">
+                    <h2 class="text-2xl font-bold text-gray-800 mt-4">Bem-vindo(a) ao Treinamento! 👋</h2>
+                    <p class="text-gray-600 mt-2 max-w-2xl mx-auto">Este guia foi preparado para padronizar e aprimorar nossa condução de processos seletivos, garantindo uma experiência positiva para os candidatos e a seleção dos melhores talentos para a CAMIM.</p>
+                    <p class="mt-6 text-sm text-gray-500"></p>
+                </div>
+            </div>
+
+            <!-- Slide 2: Apresentação Pessoal -->
+            <div class="slide" data-slide="2">
+                <h2 class="text-xl font-bold text-gray-800 mb-6 border-l-4 border-green-500 pl-4">1.1 Apresentação Pessoal 🤝</h2>
+                <div class="card-content">
+                    <div class="bg-gray-50 p-6 rounded-lg border border-gray-200 interactive-card">
+                        <h3>O Ponto de Partida</h3>
+                        <ul>
+                            <li>🗣️ <strong>Rapport e Quebra-Gelo:</strong> Utilize técnicas para criar conexão. Cuide da postura, tom de voz e comunicação não verbal.</li>
+                            <li>✨ <strong>Credibilidade:</strong> A primeira impressão é fundamental para estabelecer confiança e profissionalismo.</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="mt-6 bg-green-50 p-4 rounded-lg text-center">
+                    <p class="font-semibold text-green-800">Habilidade Chave: Comunicação Interpessoal.</p>
+                </div>
+            </div>
+
+            <!-- Slide 3: Apresentação do DHO -->
+            <div class="slide" data-slide="3">
+                <h2 class="text-xl font-bold text-gray-800 mb-6 border-l-4 border-green-500 pl-4">1.2 Apresentação do DHO 🏢</h2>
+                <div class="card-content">
+                    <div class="bg-gray-50 p-6 rounded-lg border border-gray-200 interactive-card">
+                         <h3>Vendendo o Sonho</h3>
+                        <ul>
+                            <li>💚 <strong>Cultura e Valores:</strong> Apresente a história, missão, visão e valores de forma resumida e impactante.</li>
+                            <li>🌟 <strong>Employer Branding:</strong> Conecte o papel do DHO à cultura, transmitindo a marca empregadora de forma genuína.</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="mt-6 bg-green-50 p-4 rounded-lg text-center">
+                    <p class="font-semibold text-green-800">Habilidade Chave: Conhecimento da Cultura e Persuasão Ética.</p>
+                </div>
+            </div>
+
+            <!-- Slide 4: Apresentação da Vaga -->
+            <div class="slide" data-slide="4">
+                <h2 class="text-xl font-bold text-gray-800 mb-6 border-l-4 border-green-500 pl-4">2.1 Apresentação da Vaga 📄</h2>
+                <div class="card-content">
+                    <div class="bg-gray-50 p-6 rounded-lg border border-gray-200 interactive-card">
+                        <h3>Alinhando Expectativas</h3>
+                        <ul>
+                            <li>🎯 <strong>Clareza e Detalhes:</strong> Descreva responsabilidades e desafios do dia a dia real, abordando hard e soft skills.</li>
+                            <li>💬 <strong>Transparência:</strong> Apresente as informações sobre salário, benefícios e carga de trabalho de forma clara.</li>
+                        </ul>
+                    </div>
+                </div>
+                 <div class="mt-6 bg-green-50 p-4 rounded-lg text-center">
+                    <p class="font-semibold text-green-800">Habilidade Chave: Domínio do Conteúdo.</p>
+                </div>
+            </div>
+            
+            <!-- Slide 5: Apresentação dos Candidatos -->
+            <div class="slide" data-slide="5">
+                <h2 class="text-xl font-bold text-gray-800 mb-6 border-l-4 border-green-500 pl-4">2.2 Apresentação dos Candidatos 🤔</h2>
+                <div class="card-content">
+                    <div class="bg-gray-50 p-6 rounded-lg border border-gray-200 interactive-card">
+                        <h3>Conhecendo o Talento</h3>
+                        <ul>
+                            <li>🔗 <strong>Objetivo Duplo:</strong> Use a etapa como quebra-gelo e, principalmente, para avaliar a adequação cultural e perfil comportamental.</li>
+                            <li>📈 <strong>Matriz de Competências:</strong> Identifique e pontue as soft skills.</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="mt-6 bg-green-50 p-4 rounded-lg text-center">
+                    <p class="font-semibold text-green-800">Habilidades Chave: Escuta Ativa, Análise Crítica.</p>
+                </div>
+            </div>
+            
+            <!-- Slide 6: Apresentação das Etapas -->
+            <div class="slide" data-slide="6">
+                <h2 class="text-xl font-bold text-gray-800 mb-6 border-l-4 border-green-500 pl-4">3.1 Apresentação das Etapas 📊</h2>
+                <div class="card-content">
+                    <div class="bg-gray-50 p-6 rounded-lg border border-gray-200 interactive-card">
+                        <h3>O Mapa da Jornada</h3>
+                        <ul>
+                            <li>🗺️ <strong>Transparência:</strong> Comunique o fluxo completo do processo e os prazos de forma clara e objetiva.</li>
+                            <li>⏳ <strong>Gestão de Expectativas:</strong> Saiba o que fazer em casos de atraso ou mudança no cronograma.</li>
+                        </ul>
+                    </div>
+                </div>
+                 <div class="mt-6 bg-green-50 p-4 rounded-lg text-center">
+                    <p class="font-semibold text-green-800">Foco: Organização e Comunicação Clara.</p>
+                </div>
+            </div>
+
+            <!-- Slide 7: Aplicação dos Questionários -->
+            <div class="slide" data-slide="7">
+                <h2 class="text-xl font-bold text-gray-800 mb-6 border-l-4 border-green-500 pl-4">3.2 Aplicação dos Questionários 📝</h2>
+                <div class="card-content">
+                    <div class="bg-gray-50 p-6 rounded-lg border border-gray-200 interactive-card">
+                        <h3>Avaliação de Perfil</h3>
+                        <ul>
+                            <li>😊 <strong>Comunicação Humanizada:</strong> Apresente como "Questionário de Perfil", não "Teste", para minimizar o nervosismo.</li>
+                            <li>🛋️ <strong>Logística e Ambiente:</strong> Garanta um local padronizado, silencioso e confortável para máxima concentração.</li>
+                        </ul>
+                    </div>
+                </div>
+                 <div class="mt-6 bg-green-50 p-4 rounded-lg text-center">
+                    <p class="font-semibold text-green-800">Foco: Padronização e Experiência do Candidato.</p>
+                </div>
+            </div>
+
+            <!-- Slide 8: Dinâmica de Grupo -->
+            <div class="slide" data-slide="8">
+                <h2 class="text-xl font-bold text-gray-800 mb-6 border-l-4 border-green-500 pl-4">3.3 Dinâmica de Grupo 👨‍👩‍👧‍👦</h2>
+                <div class="card-content">
+                    <div class="bg-gray-50 p-6 rounded-lg border border-gray-200 interactive-card">
+                        <h3>Observando a Colaboração</h3>
+                        <ul>
+                            <li>💡 <strong>Objetivo Claro:</strong> Saiba qual competência a dinâmica visa avaliar (Liderança, Trabalho em Equipe, etc.).</li>
+                            <li>📋 <strong>Papéis Definidos:</strong> Defina funções claras para o facilitador e observadores.</li>
+                            <li>⚖️ <strong>Gestão Ativa:</strong> Gerencie o tempo e eventuais conflitos ou perfis dominadores/tímidos.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Slide 9: Visita Guiada ao Posto -->
+            <div class="slide" data-slide="9">
+                <h2 class="text-xl font-bold text-gray-800 mb-6 border-l-4 border-green-500 pl-4">3.4 Visita Guiada ao Posto 🚶‍♂️</h2>
+                <div class="card-content">
+                    <div class="bg-gray-50 p-6 rounded-lg border border-gray-200 interactive-card">
+                        <h3>Imersão no Ambiente</h3>
+                        <ul>
+                            <li>🔍 <strong>Conteúdo Relevante:</strong> Mostre a rotina, o ambiente e a equipe para reforçar a cultura da CAMIM.</li>
+                            <li>🤫 <strong>Ética e Conduta:</strong> Evite conversas confidenciais ou exposição desnecessária de colaboradores.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Slide 10: Fechamento do Processo -->
+            <div class="slide" data-slide="10">
+                <h2 class="text-xl font-bold text-gray-800 mb-6 border-l-4 border-green-500 pl-4">4. Fechamento do Processo ✅</h2>
+                <div class="bg-gray-50 p-6 rounded-lg border border-gray-200 card-content interactive-card">
+                    <h3>Finalização com Informações de Feedback</h3>
+                     <ul>
+                        <li>➡️ <strong>Próximos Passos:</strong> Informe os prazos e as etapas futuras com clareza.</li>
+                        <li>🙏 <strong>Agradecimento Genuíno:</strong> Reforce o valor da participação do candidato e agradeça o interesse.</li>
+                        <li>🏆 <strong>Comunicação Persuasiva:</strong> Use o tom de voz e o princípio da escassez para valorizar a oportunidade.</li>
+                    </ul>
+                </div>
+                <div class="mt-6 bg-green-50 p-4 rounded-lg text-center">
+                    <p class="font-semibold text-green-800">Foco: Experiência do Candidato (Candidate Experience) e Ética.</p>
+                </div>
+            </div>
+            
+             <!-- Slide 11: Fim -->
+            <div class="slide" data-slide="11">
+                <div class="text-center">
+                    <svg class="mx-auto h-16 w-16 text-green-500" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                    </svg>
+                    <h2 class="text-2xl font-bold text-gray-800 mt-4">Treinamento Concluído! 🎉</h2>
+                    <p class="text-gray-600 mt-2 max-w-2xl mx-auto">Obrigado por sua dedicação. Ao aplicar estes princípios, fortalecemos nossa equipe e a cultura da CAMIM, garantindo que cada processo seletivo seja uma experiência de excelência.</p>
+                    <p class="mt-6 text-sm text-gray-500"></p>
+                </div>
+            </div>
+        </div>
+
+        <footer class="p-6 border-t">
+            <div class="flex items-center justify-between">
+                <button id="prevBtn" class="bg-gray-200 text-gray-700 font-semibold py-2 px-4 rounded-lg hover:bg-gray-300 transition-colors disabled:opacity-50 disabled:cursor-not-allowed">
+                    Anterior
+                </button>
+                <div class="flex-grow mx-4">
+                     <div class="w-full bg-gray-200 rounded-full h-2.5">
+                        <div id="progressBar" class="bg-green-500 h-2.5 rounded-full progress-bar-fill" style="width: 0%"></div>
+                    </div>
+                </div>
+                <button id="nextBtn" class="bg-green-500 text-white font-semibold py-2 px-4 rounded-lg hover:bg-green-600 transition-colors">
+                    Próximo
+                </button>
+            </div>
+        </footer>
+    </main>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const slides = document.querySelectorAll('.slide');
+            const prevBtn = document.getElementById('prevBtn');
+            const nextBtn = document.getElementById('nextBtn');
+            const progressBar = document.getElementById('progressBar');
+            
+            let currentSlide = 0;
+            const totalSlides = slides.length;
+            let isAnimating = false;
+
+            function showSlide(slideIndex) {
+                if (isAnimating || slideIndex === currentSlide) return;
+                isAnimating = true;
+
+                const oldSlide = slides[currentSlide];
+                const newSlide = slides[slideIndex];
+
+                oldSlide.classList.add('exiting');
+                
+                // Wait for the exit animation to finish
+                setTimeout(() => {
+                    oldSlide.classList.remove('active', 'exiting');
+                    newSlide.classList.add('active');
+                    currentSlide = slideIndex;
+                    
+                    // Update progress bar
+                    // We use currentSlide (0-indexed) + 1 to get the current slide number
+                    const progressPercentage = ((currentSlide + 1) / totalSlides) * 100;
+                    progressBar.style.width = `${progressPercentage}%`;
+
+                    // Update button states
+                    prevBtn.disabled = currentSlide === 0;
+                    nextBtn.textContent = (currentSlide === totalSlides - 1) ? 'Reiniciar' : 'Próximo';
+
+                    isAnimating = false;
+                }, 500); // Should match the animation duration
+            }
+
+            nextBtn.addEventListener('click', () => {
+                const nextIndex = (currentSlide < totalSlides - 1) ? currentSlide + 1 : 0;
+                showSlide(nextIndex);
+            });
+
+            prevBtn.addEventListener('click', () => {
+                if (currentSlide > 0) {
+                    showSlide(currentSlide - 1);
+                }
+            });
+
+            // Initial setup
+            if (slides.length > 0) {
+                slides[0].classList.add('active');
+                progressBar.style.width = `${(1 / totalSlides) * 100}%`;
+                prevBtn.disabled = true;
+            }
+        });
+    </script>
+</body>
+</html>
+
